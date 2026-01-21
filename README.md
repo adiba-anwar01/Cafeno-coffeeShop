@@ -139,7 +139,36 @@ cafeno/
 
 ## 📸 Screenshots
 
+### 💻 Desktop View
+
+| 🏠 **User Home** |
+|:--:|
+| [![User Home](screenshots/desktop-user-home.png)](screenshots/Desktop-User-Home.png) |
+
+| 🛒 **User Cart** |
+|:--:|
+| [![User Cart](screenshots/desktop-user-cart.png)](screenshots/Desktop-cart.png) |
+
+| 🛠️ **Admin – Add Item** |
+|:--:|
+| [![Admin Add Item](screenshots/desktop-admin-add.png)](screenshots/Desktop-Admin-addItem.png) |
+
+| 📦 **Admin – Orders** |
+|:--:|
+| [![Admin Orders](screenshots/desktop-admin-orders.png)](screenshots/Desktop-admin-orders.png) |
+
 ---
+
+### 📱 Mobile View
+
+| 🏠 **User (Mobile)** | 🛠️ **Admin (Mobile)** |
+|:--:|:--:|
+| [![User Mobile](screenshots/Mobile-User-View.png)](screenshots/Mobile-User-View.png) | [![Admin Mobile](screenshots/mobile-Admin-View.png)](screenshots/mobile-Admin-View.png) |
+
+---
+
+⚡ **Smooth, elegant, and built to grow — from one coffee shop today to many tomorrow!**
+
 
 
 ## ❤️ Why CAFENO?
