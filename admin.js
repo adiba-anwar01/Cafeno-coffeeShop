@@ -24,7 +24,7 @@ onAuthStateChanged(auth, async (user) => {
     location.href = "index.html";
     return;
   }
-  loadTotalEarnings();
+  // loadTotalEarnings();
 
 });
 
@@ -52,31 +52,18 @@ function formatDate(isoString) {
   });
 }
 
-
-/* ================= TOTAL EARNINGS ================= */
-let totalEarnings = 0; 
-
-async function loadTotalEarnings() {
-  totalEarnings = 0;
-
-  const snap = await getDocs(collection(db, "orders"));
-
-  snap.forEach(doc => {
-    const order = doc.data();
-    if (!order.total || order.status !== "Delivered") return;
-    totalEarnings += Number(order.total);
-  });
-
-  box.innerText = `₹${totalEarnings}`;
-}
-
-
 /* ================= RESET ================= */
 reset.onclick = () => {
   totalEarnings = 0;
+  localStorage.setItem("totalEarnings", 0);
   box.innerText = `₹0`;
 
 };
+
+
+/* ================= TOTAL EARNINGS ================= */
+let totalEarnings = Number(localStorage.getItem("totalEarnings")) || 0;
+if (box) box.innerText = `₹${totalEarnings}`;
 
 
 /* ================= CLOSE ================= */
@@ -263,6 +250,7 @@ async function showOrders() {
 
           if (newStatus === "Delivered" && currentStatus !== "Delivered") {
             totalEarnings += Number(o.total);
+            localStorage.setItem("totalEarnings", totalEarnings);
             box.innerText = `₹${totalEarnings}`;
           }
 
