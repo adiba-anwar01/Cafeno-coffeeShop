@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="admin.css">
+
+</head>
+
+<body>
+
+    <nav class=flex>
+
+        <div class="left">
+            <div id="admin">Admin</div>
+        </div>
+
+        <div class="right flex" id=right>
+            <button class="add-item">Add items</button>
+            <button class="list-item">list items</button>
+            <button class="orders">Orders</button>
+            <button class="log-out">Log out</button>
+        </div>
+
+        <div class="hamburger" id="hamburger">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+
+    </nav>
+
+    <main>
+
+        <section id="dashboard" class="flex">
+
+            <div class="admin-home flex">
+                <div class="stat-card">
+                    <i class="fa-solid fa-arrows-rotate reset"></i>
+                    <h3>Total Earning</h3>
+                    <p id="totalEarning">₹0</p>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="panel" class="flex"></section>
+
+    </main>
+
+    <!-- Admin Script -->
+    <script type="module" src="admin.js"></script>
+
+</body>
+
+</html>

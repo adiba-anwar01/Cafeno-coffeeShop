@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coffee shop</title>
+
+   <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+
+<body>
+
+  <!-- ================= NAVBAR ================= -->
+  <nav class="nav-bar flex">
+
+    <div class="left flex">
+      <div id="coffee">Cafeno</div>
+    </div>
+
+    <div class="right flex">
+
+      <!-- Search -->
+      <div class="nav-search">
+        <i class="fa-solid fa-magnifying-glass" id="searchIcon"></i>
+        <input type="text" id="navSearchInput" placeholder="Search coffee..." />
+        <i class="fa-solid fa-xmark" id="closeSearch"></i>
+      </div>
+
+      <!-- Navigation Links -->
+      <div class="nav-link flex" id="navLink">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#menu">Menu</a>
+        <a href="#orders" id="ordersLink" style="display:none;">Orders</a>
+        <button class="login-btn" id="loginBtn" onclick="window.location.href='login.html'">Log in</button>
+        <button class="login-btn" id="logoutBtn" style="display:none;">Logout</button>
+      </div>
+
+      <!-- Cart Icon -->
+      <div class="cart-icon" id="cartBtn">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <span id="cartCount">0</span>
+      </div>
+
+      <!-- Hamburger -->
+      <div class="hamburger" id="hamburger">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </div>
+
+  </nav>
+
+
+  <!-- ================= ORDERS SECTION ================= -->
+  <section id="orders" style="display:none;">
+    <div class="orders-header">
+      <h2>Your Orders</h2>
+      <span id="closeOrders">✖</span>
+    </div>
+    <div id="ordersList"></div>
+  </section>
+
+
+  <!-- ================= CART SIDEBAR ================= -->
+  <div class="cart-sidebar flex" id="cartSidebar">
+
+    <div class="cart-header flex">
+      <h3>Your Cart</h3>
+      <span id="closeCart">&times;</span>
+    </div>
+
+    <div class="cart-items"></div>
+
+    <div class="cart-footer">
+      <p>Total: $<span id="cartTotal">0.00</span></p>
+      <button class="order-btn" id="proceedBtn">Proceed to Payment</button>
+    </div>
+
+  </div>
+
+
+  <!-- ================= ADDRESS MODAL ================= -->
+  <div id="addressModal" class="flex">
+
+    <div class="address-box">
+
+      <div class="address-header">
+        <h3>Delivery Address</h3>
+        <span id="closeAddress">✖</span>
+      </div>
+
+      <textarea id="addressText" placeholder="Enter full delivery address"></textarea>
+
+      <p class="cod-text">Payment Method: <b>Cash on Delivery</b></p>
+
+      <button id="confirmOrder">Confirm Order</button>
+
+    </div>
+
+  </div>
+
+
+  <!-- ================= MAIN CONTENT ================= -->
+  <main>
+
+    <!-- Home -->
+    <section id="home">
+      <h1>Welcome to Cafeno!</h1>
+      <h2>Where Every Sip Feels Special</h2>
+      <p>
+        Handcrafted coffee made with love, delivered fresh to your doorstep.
+      </p>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="about-section">
+
+      <div class="about-container">
+
+        <div class="about-text">
+          <h2>About Cafeno</h2>
+          <p>
+            Welcome to <strong>Cafeno</strong>! We are passionate about bringing you the finest coffee, carefully
+            brewed to perfection.
+            From classic espresso to signature blends, our goal is to create a cozy and inviting space where coffee
+            lovers can relax, connect, and enjoy every sip.
+          </p>
+          <p>
+            At <strong>Cafeno</strong>, quality and customer satisfaction are our top priorities. We source premium
+            beans, serve fresh pastries, and provide friendly service to make every visit special.
+          </p>
+          </p>
+          <button class="learn-more">Learn more</button>
+        </div>
+
+        <div class="about-image"></div>
+
+      </div>
+
+    </section>
+
+    <!-- Menu -->
+    <section id="menu">
+      <h2>Our Coffee Menu</h2>
+      <div class="menu-container"></div>
+    </section>
+
+    
+    <!-- ================= FOOTER ================= -->
+    <footer class="footer">
+
+      <div class="footer-container">
+
+        <div class="footer-box">
+          <h3>Cafeno</h3>
+          <p>Serving freshly brewed coffee made with love.</p>
+        </div>
+
+        <div class="footer-box">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#menu">Menu</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-box">
+          <h4>Contact Us</h4>
+          <p><i class="fa-solid fa-phone"></i> +91 XXXXX XXXXX</p>
+          <p><i class="fa-solid fa-envelope"></i> info@brewbean.com</p>
+          <p><i class="fa-solid fa-location-dot"></i> Delhi, India</p>
+        </div>
+
+        <div class="footer-box">
+          <h4>Follow Us</h4>
+          <div class="social-icons">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Cafeno. All Rights Reserved.</p>
+      </div>
+
+    </footer>
+
+  </main>
+
+  <!-- JavaScript -->
+  <script type="module" src="script.js"></script>
+
+</body>
+
+</html>
