@@ -9,6 +9,25 @@ The system consists of **two separate web panels** working together seamlessly:
 - 🛠️ **Admin Website** – for café owners/staff to manage menu, orders & earnings  
 
 ---
+## 📂 Project Structure  
+
+```text
+cafeno/
+│
+├── index.html        # User interface
+├── admin.html        # Admin dashboard
+├── login.html        # Login page
+├── signup.html       # Signup page
+├── style.css         # User styling
+├── admin.css         # Admin styling
+├── login.css         # Login/Signup styling
+├── script.js         # User logic
+├── admin.js          # Admin logic
+├── login.js          # Login/Signup logic
+├── firebase.js       # Firebase configuration
+└── README.md
+```
+---
 
 ## 🚀 Features  
 
@@ -59,11 +78,11 @@ The system consists of **two separate web panels** working together seamlessly:
 
 **Version Control:** Git & GitHub
 
-## Install & Setup
+## Setup & Installation
 
 Clone the repository:  
 ```bash
-git clone https://github.com/<your-username>/cafeno.git
+git clone https://github.com/adiba-anwar01/Cafeno-coffeeShop.git
 ```
 Open the Cafeno project in your code editor (VS Code recommended).
 
@@ -88,25 +107,6 @@ Build & run! 🚀
 
 🧠 Smart UI state handling without page refresh
 
----
-
-## 📂 Project Structure  
-
-```text
-cafeno/
-│
-├── index.html        # User interface
-├── admin.html        # Admin dashboard
-├── login.html        # Authentication page
-├── style.css         # User styling
-├── admin.css         # Admin styling
-├── script.js         # User logic
-├── admin.js          # Admin logic
-├── firebase.js       # Firebase configuration
-└── README.md
-```
-
----
 
 ## 🌱 Current Scope 
 
@@ -155,13 +155,13 @@ cafeno/
 |:--:|
 | [![User Home](screenshots/user_home.png)](screenshots/user_home.png) |
 
-| 🛒 **User Cart** |
-|:--:|
-| [![User Cart](screenshots/user_cart.png)](screenshots/user_cart.png) |
-
 | 📋 **User Menu** |
 |:--:|
 | [![User Menu](screenshots/user_menu.png)](screenshots/user_menu.png) |
+
+| 🛒 **User Cart** |
+|:--:|
+| [![User Cart](screenshots/user_cart.png)](screenshots/user_cart.png) |
 
 | 🛠️ **Admin – Add Item** |
 |:--:|
@@ -191,11 +191,9 @@ Have ideas to enhance **Cafeno**?
 Feel free to fork this repository, open issues, or submit pull requests.  
 Thoughtful contributions, improvements, and feedback are always welcome.
 
-## 📬 Contact
+📬 Contact
 
 📧 **Email:** adibadeveloper02@gmail.com  
-
-## ☕ About the Creator
 
 Crafted with passion and attention to detail by **Adiba**,  
 focused on building clean, scalable, and user-friendly web experiences.
