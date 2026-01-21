@@ -236,12 +236,6 @@ nav a:hover {
   justify-content: center;
   border: none;
   border-radius: 50%;
-  transition: all 0.2s ease;
-}
-
-.item-qty button:hover {
-  background-color: (var(--hover-color));
-  transform: scale(1.1);
 }
 
 .item-qty span {
