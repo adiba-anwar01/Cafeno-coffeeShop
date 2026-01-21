@@ -30,7 +30,6 @@ The system consists of **two separate web panels** working together seamlessly:
 
 ⏱️ Latest orders shown first using date-based sorting
 
----
 
 ### 🛠️ Admin Dashboard
 
@@ -49,7 +48,6 @@ The system consists of **two separate web panels** working together seamlessly:
 
 🔐 Role-based admin access control
 
----
 
 ## 🧩 Tech Stack  
 
@@ -61,7 +59,22 @@ The system consists of **two separate web panels** working together seamlessly:
 
 **Version Control:** Git & GitHub
 
----
+## Install & Setup
+
+Clone the repository:  
+```bash
+git clone https://github.com/<your-username>/cafeno.git
+```
+Open the Cafeno project in your code editor (VS Code recommended).
+
+Add your Firebase configuration file (`firebase-config.js`).
+
+Enable Firebase Authentication, Firestore / Realtime Database & Storage in the Firebase console.
+
+Start a local server (for example, using the **Live Server** extension in VS Code) or simply open `index.html` in your browser.
+
+Build & run! 🚀
+
 
 ## ✨ Key Highlights  
 
@@ -107,7 +120,6 @@ cafeno/
 
 ✅ Responsive UI
 
----
 
 ## 🔮 Future Enhancements
 
@@ -123,7 +135,6 @@ cafeno/
 
 🌍 Multi-branch / multi-store support
 
----
 
 ## 🎨 Customization Guidelines
 
@@ -135,7 +146,6 @@ cafeno/
 
 🔐 Extend admin permissions if required
 
----
 
 ## 📸 Screenshots
 
@@ -143,32 +153,25 @@ cafeno/
 
 | 🏠 **User Home** |
 |:--:|
-| [![User Home](screenshots/desktop-user-home.png)](screenshots/Desktop-User-Home.png) |
+| [![User Home](screenshots/user_home.png)](screenshots/user_home.png) |
 
 | 🛒 **User Cart** |
 |:--:|
-| [![User Cart](screenshots/desktop-user-cart.png)](screenshots/Desktop-cart.png) |
+| [![User Cart](screenshots/user_cart.png)](screenshots/user_cart.png) |
+
+| 📋 **User Menu** |
+|:--:|
+| [![User Menu](screenshots/user_menu.png)](screenshots/user_menu.png) |
 
 | 🛠️ **Admin – Add Item** |
 |:--:|
-| [![Admin Add Item](screenshots/desktop-admin-add.png)](screenshots/Desktop-Admin-addItem.png) |
+| [![Admin Add Item](screenshots/admin_add_item.png)](screenshots/admin_add_item.png) |
 
 | 📦 **Admin – Orders** |
 |:--:|
-| [![Admin Orders](screenshots/desktop-admin-orders.png)](screenshots/Desktop-admin-orders.png) |
+| [![Admin Orders](screenshots/admin_order.png)](screenshots/admin_order.png) |
 
----
-
-### 📱 Mobile View
-
-| 🏠 **User (Mobile)** | 🛠️ **Admin (Mobile)** |
-|:--:|:--:|
-| [![User Mobile](screenshots/Mobile-User-View.png)](screenshots/Mobile-User-View.png) | [![Admin Mobile](screenshots/mobile-Admin-View.png)](screenshots/mobile-Admin-View.png) |
-
----
-
-⚡ **Smooth, elegant, and built to grow — from one coffee shop today to many tomorrow!**
-
+☕ Brewing a better café experience, one screen at a time.
 
 
 ## ❤️ Why CAFENO?
@@ -180,6 +183,26 @@ Demonstrates practical Firebase usage
 Clean UI/UX with business logic
 
 Built to scale beyond a single café
+
+
+## 🤝 Contributing
+
+Have ideas to enhance **Cafeno**?
+Feel free to fork this repository, open issues, or submit pull requests.  
+Thoughtful contributions, improvements, and feedback are always welcome.
+
+## 📬 Contact
+
+📧 **Email:** adibadeveloper02@gmail.com  
+
+## ☕ About the Creator
+
+Crafted with passion and attention to detail by **Adiba**,  
+focused on building clean, scalable, and user-friendly web experiences.
+
+⚡ **Cafeno** — where modern web design meets a seamless café experience.  
+Designed today for one coffee shop, ready to scale for many tomorrow.
+
 
 
 
