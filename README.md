@@ -84,7 +84,7 @@ Clone the repository:
 ```bash
 git clone https://github.com/adiba-anwar01/Cafeno-coffeeShop.git
 ```
-Open the Cafeno project in your code editor (VS Code recommended).
+Open the Cafeno project in your code editor.
 
 Add your Firebase configuration file (`firebase-config.js`).
 
