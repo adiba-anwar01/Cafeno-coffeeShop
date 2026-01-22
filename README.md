@@ -167,10 +167,6 @@ Build & run! 🚀
 |:--:|
 | [![Admin Add Item](screenshots/admin_add_item.png)](screenshots/admin_add_item.png) |
 
-| 📦 **Admin – Orders** |
-|:--:|
-| [![Admin Orders](screenshots/admin_order.png)](screenshots/admin_order.png) |
-
 ☕ Brewing a better café experience, one screen at a time.
 
 
