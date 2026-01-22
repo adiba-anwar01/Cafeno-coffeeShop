@@ -163,9 +163,13 @@ Build & run! 🚀
 |:--:|
 | [![User Cart](screenshots/user_cart.png)](screenshots/user_cart.png) |
 
-| 🛠️ **Admin – Add Item** |
+| 🛠️ **Admin – Home** |
 |:--:|
-| [![Admin Add Item](screenshots/admin_add_item.png)](screenshots/admin_add_item.png) |
+| [![Admin Home](screenshots/admin_home.png)](screenshots/admin_home.png) |
+
+| 🛠️ **Admin – Manage Menu** |
+|:--:|
+| [![Admin Manage Menu](screenshots/admin_manage_menu.png)](screenshots/admin_manage_menu.png) |
 
 ☕ Brewing a better café experience, one screen at a time.
 
