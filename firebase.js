@@ -4,12 +4,12 @@ import { getFirestore } from "https://www.gstatic.com/firebasejs/9.23.0/firebase
 
 
 const firebaseConfig = {
-  apiKey: "XXXX",
-  authDomain: "XXXX.firebaseapp.com",
-  projectId: "XXXX",
-  storageBucket: "XXXX.appspot.com",
-  messagingSenderId: "XXXX",
-  appId: "XXXX"
+  apiKey: "AIzaSyAxNt53C0t3ghd9llxK1h9KYjnr084iL-I",
+  authDomain: "coffee-shop-e9d40.firebaseapp.com",
+  projectId: "coffee-shop-e9d40",
+  storageBucket: "coffee-shop-e9d40.appspot.com",
+  messagingSenderId: "414881623578",
+  appId: "1:414881623578:web:59b29583cd58c0d4182ba3"
 };
 
 // Initialize Firebase
