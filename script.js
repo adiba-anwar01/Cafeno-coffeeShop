@@ -121,7 +121,7 @@ function createMenuCard(id, item) {
   card.innerHTML = `
     <img src="${item.image}">
     <h3>${item.name}</h3>
-    <p>$${item.price}</p>
+    <p>₹${item.price}</p>
     <button class="add-btn">Add to Cart</button>
   `;
 
@@ -165,7 +165,7 @@ function addToCart(item) {
       <button class="plus"><i class="fa-solid fa-plus"></i></button>
     </div>
 
-    <div class="item-price">$${item.price}</div>
+    <div class="item-price">₹${item.price}</div>
   `;
 
   cartBox.appendChild(div);
@@ -177,7 +177,7 @@ function addToCart(item) {
   div.querySelector(".plus").onclick = () => {
     item.qty++;
     qtyEl.innerText = item.qty;
-    priceEl.innerText = "$" + (item.qty * item.price);
+    priceEl.innerText = "₹" + (item.qty * item.price);
     updateTotal();
   };
 
@@ -185,7 +185,7 @@ function addToCart(item) {
     if (item.qty > 1) {
       item.qty--;
       qtyEl.innerText = item.qty;
-      priceEl.innerText = "$" + (item.qty * item.price);
+      priceEl.innerText = "₹" + (item.qty * item.price);
     } else {
       count.innerText = Number(count.innerText) - 1;
       cart = cart.filter(i => i.id !== item.id);
