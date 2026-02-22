@@ -230,6 +230,7 @@ confirmOrderBtn.onclick = async () => {
   cartBox.innerHTML = "";
   cart = [];
   cartTotal.innerText = "0.00";
+  count.innerText = "0";
 };
 
 /* ================= CLOSE ADDRESS MODAL ================= */
