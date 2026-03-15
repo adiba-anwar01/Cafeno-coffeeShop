@@ -1,4 +1,4 @@
-/* ---------- RESET ---------- */
+/* RESET */
 * {
   padding: 0;
   margin: 0;
@@ -6,7 +6,7 @@
   font-family: 'Poppins', sans-serif;
 }
 
-/* ---------- ROOT VARIABLES ---------- */
+/* ROOT VARIABLES */
 :root{
 
   /* Colors */
@@ -22,12 +22,12 @@
   --grey:#ccc;
 }
 
-/* ---------- UTILITIES ---------- */
+/* UTILITIES */
 .flex{
   display: flex;
 }
 
-/* ---------- NAVBAR ---------- */
+/* NAVBAR */
 nav {
   position: sticky;
   top: 0;
@@ -78,7 +78,7 @@ nav {
 }
 
 
-/* ---------- MAIN SECTION ---------- */
+/* MAIN SECTION */
 main{
   background-color: var(--main-color);
 }
@@ -132,7 +132,7 @@ main{
 }
 
 
-/* ---------- ADMIN PANEL ---------- */
+/* ADMIN PANEL */
 #panel {
   padding: 2rem 1rem;
   min-height: calc(100vh - 8vh);
@@ -188,7 +188,7 @@ main{
 }
 
 
-/* ---------- ADD MENU ITEM ---------- */
+/* ADD MENU ITEM */
 .admin-panel input {
   width: 100%;
   padding: 0.65rem;
@@ -203,7 +203,7 @@ main{
 }
 
 
-/* ---------- CARD (MENU + ORDERS) ---------- */
+/* CARD (MENU + ORDERS) */
 .card {
   padding: 0.8rem;
   margin-bottom: 0.7rem;
@@ -218,7 +218,7 @@ main{
 }
 
 
-/* ---------- MENU ---------- */
+/* MENU */
 .card img {
   width: 45px;
   height: 45px;
@@ -254,7 +254,7 @@ main{
 }
 
 
-/* ---------- ORDER ---------- */
+/* ORDER */
 .order{
   max-width:1180px;
 }
@@ -302,7 +302,7 @@ main{
 }
 
 
-/* ---------- RESPONSIVE ---------- */
+/* RESPONSIVE */
 @media screen and (max-width: 780px) {
   
   nav {
