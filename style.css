@@ -1,4 +1,4 @@
-/* ================= GLOBAL RESET ================= */
+/* GLOBAL RESET */
 * {
   padding: 0;
   margin: 0;
@@ -6,7 +6,7 @@
   font-family: 'Poppins', sans-serif;
 }
 
-/* ================= ROOT VARIABLES ================= */
+/* ROOT VARIABLES */
 :root {
   --primary-color: #6f4e37;
   --secondary-color: rgb(58, 19, 19);
@@ -24,12 +24,12 @@
   --card:#f5f5f5;;
 }
 
-/* ================= UTILITIES ================= */
+/* UTILITIES */
 .flex {
   display: flex;
 }
 
-/* ================= NAVBAR ================= */
+/* NAVBAR */
 nav {
   position: sticky;
   top: 0;
@@ -92,7 +92,7 @@ nav a:hover {
   transform: translateY(-2px);
 }
 
-/* ================= SEARCH ================= */
+/* SEARCH */
 .nav-search {
   display: flex;
   align-items: center;
@@ -123,7 +123,7 @@ nav a:hover {
   display: none;
 }
 
-/* ================= CART ================= */
+/* CART */
 .cart-icon {
   position: relative;
   padding: 0.5rem 0.8rem;
@@ -270,7 +270,7 @@ nav a:hover {
 
 }
 
-/* ================= ADDRESS MODAL ================= */
+/* ADDRESS MODAL */
 
 #addressModal {
   position: fixed;
@@ -347,7 +347,7 @@ nav a:hover {
   transform: translateY(-2px);
 }
 
-/* ================= ORDERS MODAL ================= */
+/* ORDERS MODAL */
 
 #orders {
   position: fixed;
@@ -448,7 +448,7 @@ nav a:hover {
 
 
 
-/* ================= SECTION ================= */
+/* SECTION */
 section {
   padding: 4rem 1rem;
   min-height: calc(100vh - 8vh);
@@ -611,7 +611,7 @@ section {
 }
 
 
-/* ================= SECTION ================= */
+/* SECTION */
 
 .footer {
   padding: 3rem 1rem 1rem;
