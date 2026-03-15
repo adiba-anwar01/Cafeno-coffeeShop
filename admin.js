@@ -1,4 +1,4 @@
-/* ================= FIREBASE ================= */
+/* FIREBASE */
 import { auth, db } from "./firebase.js";
 import { onAuthStateChanged, signOut }
   from "https://www.gstatic.com/firebasejs/9.23.0/firebase-auth.js";
@@ -6,7 +6,7 @@ import { collection, getDoc, getDocs, addDoc, deleteDoc, doc, updateDoc, query, 
   from "https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore.js";
 
 
-/* ================= ELEMENTS ================= */
+/* ELEMENTS */
 const right = document.getElementById("right");
 const section = document.getElementById("panel");
 const hamburger = document.getElementById("hamburger");
@@ -14,7 +14,7 @@ const box = document.getElementById("totalEarning");
 const reset = document.querySelector(".reset");
 
 
-/* ================= AUTH ================= */
+/* AUTH */
 onAuthStateChanged(auth, async (user) => {
   if (!user) return location.href = "login.html";
 
@@ -28,7 +28,7 @@ onAuthStateChanged(auth, async (user) => {
 });
 
 
-/* ================= NAV ================= */
+/* NAV */
 hamburger.onclick = () => right.classList.toggle("active");
 
 document.querySelector(".add-item").onclick = showAddItem;
@@ -37,7 +37,7 @@ document.querySelector(".orders").onclick = showOrders;
 document.querySelector(".log-out").onclick = logout;
 
 
-/* ================= HELPERS ================= */
+/* HELPERS */
 function formatDate(isoString) {
   if (!isoString) return "N/A";
 
@@ -51,7 +51,7 @@ function formatDate(isoString) {
   });
 }
 
-/* ================= RESET ================= */
+/* RESET */
 reset.onclick = () => {
   totalEarnings = 0;
   localStorage.setItem("totalEarnings", 0);
@@ -60,19 +60,19 @@ reset.onclick = () => {
 };
 
 
-/* ================= TOTAL EARNINGS ================= */
+/* TOTAL EARNINGS */
 let totalEarnings = Number(localStorage.getItem("totalEarnings")) || 0;
 if (box) box.innerText = `₹${totalEarnings}`;
 
 
-/* ================= CLOSE ================= */
+/* CLOSE */
 function closeSection() {
   section.innerHTML = "";
 
 }
 
 
-/* ================= ADD MENU ITEM ================= */
+/* ADD MENU ITEM */
 function showAddItem() {
 
   section.innerHTML = `
@@ -111,7 +111,7 @@ function showAddItem() {
 }
 
 
-/* ================= MENU LIST ================= */
+/* MENU LIST */
 async function showMenu() {
 
   section.innerHTML = `
@@ -165,7 +165,7 @@ async function showMenu() {
 }
 
 
-/* ================= DELETE ================= */
+/* DELETE */
 window.deleteItem = async (id) => {
 
   await deleteDoc(doc(db, "menu", id));
@@ -174,7 +174,7 @@ window.deleteItem = async (id) => {
 };
 
 
-/* ================= ORDERS ================= */
+/* ORDERS */
 async function showOrders() {
 
   section.innerHTML = `
@@ -270,7 +270,7 @@ async function showOrders() {
 }
 
 
-/* ================= LOGOUT ================= */
+/* LOGOUT */
 async function logout() {
 
   await signOut(auth);
