@@ -1,4 +1,4 @@
-//---------------- IMPORTS ----------------//
+//IMPORTS 
 import { auth, db } from './firebase.js';
 import { createUserWithEmailAndPassword, signInWithEmailAndPassword }
   from "https://www.gstatic.com/firebasejs/9.23.0/firebase-auth.js";
@@ -6,7 +6,7 @@ import { doc, setDoc, getDoc }
   from "https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore.js";
 
 
-//---------------- PASSWORD TOGGLE FUNCTION ----------------//
+// PASSWORD TOGGLE FUNCTION 
 function setupPasswordToggle(passwordInputId, toggleIconId) {
   const passwordInput = document.getElementById(passwordInputId);
   const toggleIcon = document.getElementById(toggleIconId);
@@ -29,7 +29,7 @@ setupPasswordToggle("signupPassword", "toggleSignup");
 setupPasswordToggle("loginPassword", "togglePassword");
 
 
-// ---------------- SIGNUP ----------------//
+// SIGNUP 
 const signupForm = document.getElementById("signupForm");
 
 if (signupForm) {
@@ -68,7 +68,7 @@ if (signupForm) {
 }
 
 
-// ---------------- LOGIN ----------------//
+//  LOGIN 
 const loginForm = document.getElementById("loginForm");
 
 if (loginForm) {
