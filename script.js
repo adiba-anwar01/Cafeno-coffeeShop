@@ -1,4 +1,4 @@
-/* ================= FIREBASE ================= */
+/* FIREBASE */
 import { auth, db } from "./firebase.js";
 import { onAuthStateChanged, signOut }
   from "https://www.gstatic.com/firebasejs/9.23.0/firebase-auth.js";
@@ -6,7 +6,7 @@ import { collection, query, where, getDocs, addDoc, onSnapshot, orderBy }
   from "https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore.js";
 
 
-/* ================= ELEMENTS ================= */
+/* ELEMENTS */
 const loginBtn = document.getElementById("loginBtn");
 const logoutBtn = document.getElementById("logoutBtn");
 const ordersLink = document.getElementById("ordersLink");
@@ -34,7 +34,7 @@ const ordersSection = document.getElementById("orders");
 const ordersList = document.getElementById("ordersList");
 
 
-/* ================= AUTH UI ================= */
+/* AUTH UI */
 onAuthStateChanged(auth, user => {
   loginBtn.style.display = user ? "none" : "inline-block";
   logoutBtn.style.display = user ? "inline-block" : "none";
@@ -42,7 +42,7 @@ onAuthStateChanged(auth, user => {
 });
 
 
-/* ================= UTILITIES ================= */
+/* UTILITIES */
 function formatDate(isoString) {
   return new Date(isoString).toLocaleString("en-IN", {
     day: "2-digit",
@@ -55,7 +55,7 @@ function formatDate(isoString) {
 }
 
 
-/* ================= NAV  ================= */
+/* NAV  */
 document.getElementById("hamburger").onclick = () =>
 document.getElementById("navLink").classList.toggle("active");
 
@@ -63,7 +63,7 @@ cartBtn.onclick = () => cartSidebar.classList.add("active");
 closeCart.onclick = () => cartSidebar.classList.remove("active");
 
 
-/* ================= SEARCH ================= */
+/* SEARCH */
 searchIcon.onclick = () => {
   searchIcon.classList.toggle("active");
   navSearchInput.classList.toggle("active");
@@ -101,7 +101,7 @@ function filterMenu(query) {
 }
 
 
-/* ================= MENU ================= */
+/* MENU */
 async function loadMenu() {
   const snap = await getDocs(collection(db, "menu"));
   snap.forEach(doc => {
@@ -132,7 +132,7 @@ function createMenuCard(id, item) {
 }
 
 
-/* ================= CART ================= */
+/* CART */
 let cart = [];
 
 function updateTotal() {
@@ -196,7 +196,7 @@ function addToCart(item) {
 }
 
 
-/* ================= PLACE ORDER (STEP 1) ================= */
+/* PLACE ORDER (STEP 1) */
 document.querySelector(".order-btn").onclick = () => {
   const user = auth.currentUser;
 
@@ -206,7 +206,7 @@ document.querySelector(".order-btn").onclick = () => {
   addressModal.style.display = "flex";
 };
 
-/* ================= CONFIRM ORDER (STEP 2) ================= */
+/* CONFIRM ORDER (STEP 2) */
 confirmOrderBtn.onclick = async () => {
   const user = auth.currentUser;
 
@@ -233,13 +233,13 @@ confirmOrderBtn.onclick = async () => {
   count.innerText = "0";
 };
 
-/* ================= CLOSE ADDRESS MODAL ================= */
+/* CLOSE ADDRESS MODAL */
 closeAddress.onclick = () => {
   addressModal.style.display = "none";
 };
 
 
-/* ================= SHOW ORDERS (REAL-TIME) ================= */
+/* SHOW ORDERS (REAL-TIME) */
 ordersLink.onclick = () => {
   const user = auth.currentUser;
   if (!user) return;
@@ -291,7 +291,7 @@ document.getElementById("closeOrders").onclick = () =>
   ordersSection.style.display = "none";
 
 
-/* ================= LOGOUT ================= */
+/* LOGOUT */
 logoutBtn.onclick = async () => {
   await signOut(auth);
   alert("Logged out");
